@@ -18,6 +18,9 @@ We are evaluating your ability to:
 - OpenAI API key with access to GPT-4
 - Pre-configured vector store ID containing FAQ/knowledge base
 
+### SDK Documentation
+OpenAI Agents Python SDK: https://openai.github.io/openai-agents-python/
+
 ### Core Requirements
 
 #### 1. Human Handoff System
@@ -56,27 +59,26 @@ We are evaluating your ability to:
 - `.env.example` - Template for required environment variables
 - `requirements.txt` - Required dependencies
 
-## Your Task
+## Interview Format (1 Hour)
 
-### 1. Implementation (45 minutes)
+### Implementation Phase (45 minutes)
 Complete the TODOs in `main.py`:
 - Initialize the OpenAI agent with the provided vector store
 - Implement the escalate_to_human tool
 - Configure agent to process messages and return responses
 - Ensure proper tool execution and response handling
 
-### 2. Prompt Engineering (Key Focus)
-Design the agent's instructions to ensure:
-- **Proper tool usage**: Agent searches knowledge base before responding
-- **Clear escalation criteria**: When to escalate vs self-serve
-- **Consistent behavior**: Professional tone, accurate responses
-- **Edge case handling**: What to do when information isn't found
+Focus on:
+- Getting a working implementation
+- Writing an effective agent prompt
+- Ensuring correct behavior for FAQ and escalation
 
-### 3. Testing & Refinement
-Test your implementation with various queries to ensure:
-- FAQ questions are answered from knowledge base
-- Complex issues trigger appropriate escalation
-- Edge cases are handled gracefully
+### Discussion Phase (15 minutes)
+Be prepared to discuss:
+- Your approach to the problem
+- How you designed the agent instructions
+- Trade-offs and decisions you made
+- How you would extend or improve the solution
 
 ## Evaluation Criteria
 
@@ -152,17 +154,5 @@ See `test_queries.md` for sample queries and expected behaviors to validate your
 - Losing conversation context on errors
 - Not handling edge cases (empty responses, API failures)
 
-## Submission
-Your solution should:
-1. Run successfully with provided environment variables
-2. Handle all test queries appropriately
-3. Include any additional notes about your approach in comments
-
-## Time Allocation Suggestion
-- 10 min: Understanding requirements and starter code
-- 20 min: Initial implementation
-- 15 min: Prompt refinement and testing
-- 10 min: Edge case handling and polish
-- 5 min: Final testing and cleanup
 
 Good luck! We're excited to see your approach to building an effective AI customer support agent.
