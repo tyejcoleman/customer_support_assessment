@@ -15,8 +15,6 @@ from rich.panel import Panel
 from rich.text import Text
 
 # TODO: Import required classes from agents library
-# from agents import Agent, function_tool, FileSearchTool
-# from agents.run import Runner
 
 # Load environment variables
 load_dotenv()
@@ -42,20 +40,7 @@ console = Console()
 agent = None
 
 
-# TODO: Define escalate_to_human tool using @function_tool decorator
-# @function_tool
-# async def escalate_to_human(reason: str) -> str:
-#     """Escalate the conversation to a human agent when the issue cannot be resolved."""
-#     console.print(Panel(
-#         f"[bold yellow]🤝 HANDOFF TRIGGERED[/bold yellow]\n"
-#         f"[white]Reason: {reason}[/white]\n"
-#         f"[dim]A human agent will be with you shortly.[/dim]",
-#         title="[bold]Human Agent Required[/bold]",
-#         border_style="yellow",
-#         padding=(1, 2)
-#     ))
-#     logger.info(f"Handoff triggered: {reason}")
-#     return f"Successfully escalated to human agent. Reason: {reason}. A support ticket has been created."
+# TODO: Define escalate_to_human tool
 
 
 async def initialize_agent():
@@ -74,20 +59,7 @@ async def initialize_agent():
         sys.exit(1)
     
     try:
-        # TODO: Initialize the agent with FileSearchTool and escalate_to_human tool
-        # Steps:
-        # 1. Create FileSearchTool with vector_store_id
-        # 2. Create Agent with name, model, instructions, and tools
-        # 3. Include both FileSearchTool and escalate_to_human in tools list
-        
-        # file_search = FileSearchTool(vector_store_ids=[vector_store_id])
-        
-        # agent = Agent(
-        #     name="Customer Support Agent",
-        #     model="gpt-4o",
-        #     instructions="""[Your prompt here]""",
-        #     tools=[file_search, escalate_to_human]
-        # )
+        # TODO: Initialize agent with vector store and tools
         
         logger.info("Agent initialized successfully")
         console.print("[bold green]✓ Agent initialized successfully[/bold green]")
@@ -111,17 +83,7 @@ async def process_message(user_input: str) -> str:
     global agent
     
     try:
-        # TODO: Run the agent and get response
-        # Steps:
-        # 1. Use Runner.run() as a class method (not instance)
-        # 2. Pass agent and user_input
-        # 3. Extract final_output from response
-        
-        # response = await Runner.run(agent, user_input)
-        # 
-        # if hasattr(response, 'final_output'):
-        #     return str(response.final_output)
-        # return "I'm sorry, I couldn't process your request."
+        # TODO: Process message with agent
         
         # Placeholder response for template
         return "TODO: Implement actual agent response using OpenAI Agents framework"
