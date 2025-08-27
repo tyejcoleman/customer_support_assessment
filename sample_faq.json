@@ -1,0 +1,30 @@
+[
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept credit cards, debit cards, cash, WeChat Pay, Alipay, and gift cards."
+  },
+  {
+    "question": "Is there a cancellation fee?",
+    "answer": "We kindly ask for at least 12 hours' notice to cancel. A 50% cancellation fee applies if you cancel within 12 hours of your appointment."
+  },
+  {
+    "question": "Do I need to pay a deposit?",
+    "answer": "Some high-demand services may require a deposit. Deposits are applied toward your final payment."
+  },
+  {
+    "question": "How do I become a member?",
+    "answer": "You can sign up at our front desk or online. Membership is $39.99/month and includes one free service per month and special discounts."
+  },
+  {
+    "question": "Do you offer birthday specials?",
+    "answer": "Yes, you receive 20% off one service during your birthday month. Please show a valid ID."
+  },
+  {
+    "question": "Do you have parking available?",
+    "answer": "Yes, we offer free parking and accessible parking spaces."
+  },
+  {
+    "question": "Are showers and changing rooms available?",
+    "answer": "Yes, we provide individual changing rooms and showers stocked with basic amenities."
+  }
+]
